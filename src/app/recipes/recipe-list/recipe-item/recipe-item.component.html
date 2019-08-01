@@ -1,1 +1,12 @@
-<p>recipe-item works!</p>
+<a class="list-group-item clearfix" (click)="onSelected()">
+  <div class="text-left">
+    <h4 class="list-group-item-dark">{{ recipe.name }}</h4>
+    <p>{{ recipe.description }}</p>
+    <img
+      src="{{ recipe.imagePath }}"
+      alt=""
+      class="img-fluid float-right"
+      style="height: 50px;"
+    />
+  </div>
+</a>
